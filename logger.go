@@ -135,6 +135,8 @@ func init() {
 		Hooks:     make(logrus.LevelHooks),
 		Level:     0,
 	}
+	SetDebug(true)
+	Info("logger -- init")
 	// SetDebug(config.C.Debug)
 	//ConfigESLogger("http://localhost:9200","localhost","mylog")
 	//configFileLogger("api")
